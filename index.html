@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud-System</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+
+
+    <div class="w-75 mx-auto py-5">
+        <h1 class=" text-white text-primary">Product Mangment System</h1>
+
+        <div class="form-floating mb-3">
+            <input oninput="validteInputs(this)" type="text" class="form-control border-0 border-bottom " id="productName" placeholder="productName">
+            <div class="alert alert-danger d-none py-1 mt-2">
+                <smal> product name must start with Uppercase </smal>
+            </div>
+            <label for="productName">Product Name:</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input oninput="validteInputs(this)" type="number" class="form-control border-0 border-bottom " id="productPrice"
+                placeholder="productPrice">
+                <div class="alert alert-danger d-none py-1 mt-2">
+                    
+                </div>
+            <label for="productPrice">Product Price:</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input oninput="validteInputs(this)" list="Categories" type="text" class="form-control border-0 border-bottom " id="productCategory"
+                placeholder="productCategory">
+                <div class="alert alert-danger d-none py-1 mt-2">
+                    <smal > product Category does not exist </smal>
+                </div>
+            <label  for="productCategory">Product Category:</label>
+
+            <datalist id="Categories">
+                <option value="TV"></option>
+                <option value="Lape Top"></option>
+                <option value="Mobile"></option>
+                <option value="Pc"></option>
+                <option value="Watch"></option>
+            </datalist>
+        </div>
+
+        <div class="form-floating mb-3">
+            <textarea  type="text" class="form-control border-0 border-bottom " id="ProductDiscription"
+                placeholder="ProductDiscription"></textarea>
+                <div class="alert alert-danger d-none py-1 mt-2">
+                    
+                </div>
+            <label for="ProductDiscription">Product Discription:</label>
+        </div>
+
+
+
+        <div class="pro-img form-floating mb-3 mb-2">
+            <input accept="image/*" type="file" class="form-control border-0 border-bottom " id="productImage"
+                placeholder="productIamge">
+        </div>
+
+
+
+
+        <button id="addBtn" onclick="addProudect()"  class="btn btn-info text-white ">Add Product</button>
+        <button id="updateBtn" onclick="updateProduct()"  class="btn btn-warning text-dark d-none ">Update Product</button>
+
+    </div>
+
+    <div class="container ">
+        <input oninput="searshProducts()" type="text" class="form-control border-0 border-bottom mb-5 " id="searsh"
+        placeholder="searsh...">
+        <div id="item"  class="row ">
+            
+            
+
+
+        
+
+        </div>
+    </div> 
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

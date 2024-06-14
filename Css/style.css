@@ -1,0 +1,15 @@
+body{
+    background-color: black !important;
+    
+}
+
+
+.form-control:focus{
+    box-shadow: none;
+}
+
+.item img{
+
+    height: 150px;
+    object-fit: contain;
+}
